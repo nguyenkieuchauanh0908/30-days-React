@@ -1,5 +1,10 @@
 import { useState } from "react";
-export default function Player({ initialName, symbol, isActive }) {
+export default function Player({
+  initialName,
+  symbol,
+  isActive,
+  onChangeName,
+}) {
   let [isEditing, setIsEditing] = useState(false);
   let [name, setName] = useState(initialName);
   function handleOnChange(event) {
@@ -20,7 +25,12 @@ export default function Player({ initialName, symbol, isActive }) {
       ) : (
         <span className="player">
           <input type="text" required value={name} onChange={handleOnChange} />
-          <button onClick={() => setIsEditing((isEditing) => !isEditing)}>
+          <button
+            onClick={() => {
+              setIsEditing((isEditing) => !isEditing),
+                onChangeName(symbol, name);
+            }}
+          >
             Save
           </button>
         </span>
