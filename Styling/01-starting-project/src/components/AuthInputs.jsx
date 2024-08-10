@@ -1,12 +1,13 @@
-import { useState } from 'react';
-
+import { useState } from "react";
+import Button from "./Button";
+import Input from "./Input";
 export default function AuthInputs() {
-  const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredPassword, setEnteredPassword] = useState('');
+  const [enteredEmail, setEnteredEmail] = useState("");
+  const [enteredPassword, setEnteredPassword] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   function handleInputChange(identifier, value) {
-    if (identifier === 'email') {
+    if (identifier === "email") {
       setEnteredEmail(value);
     } else {
       setEnteredPassword(value);
@@ -17,36 +18,35 @@ export default function AuthInputs() {
     setSubmitted(true);
   }
 
-  const emailNotValid = submitted && !enteredEmail.includes('@');
-  const passwordNotValid = submitted && enteredPassword.trim().length < 6;
+  let emailNotValid = submitted && !enteredEmail.includes("@");
+  let passwordNotValid = submitted && enteredPassword.trim().length < 6;
 
   return (
-    <div id="auth-inputs">
-      <div className="controls">
-        <p>
-          <label>Email</label>
-          <input
-            type="email"
-            className={emailNotValid ? 'invalid' : undefined}
-            onChange={(event) => handleInputChange('email', event.target.value)}
-          />
-        </p>
-        <p>
-          <label>Password</label>
-          <input
-            type="password"
-            className={passwordNotValid ? 'invalid' : undefined}
-            onChange={(event) =>
-              handleInputChange('password', event.target.value)
-            }
-          />
-        </p>
+    <div
+      id="auth-inputs"
+      className="w-full max-w-sm p-8 rounded shadow-md bg-gradient-to-b from-stone-700 to-stone-800 mx-auto"
+    >
+      <div>
+        <Input
+          label="Email"
+          invalid={emailNotValid}
+          type="email"
+          onChange={(event) => handleInputChange("email", event.target.value)}
+        />
+        <Input
+          label="Password"
+          invalid={passwordNotValid}
+          type="password"
+          onChange={(event) =>
+            handleInputChange("password", event.target.value)
+          }
+        />
       </div>
-      <div className="actions">
-        <button type="button" className="text-button">
+      <div className="flex flex-row justify-end mt-2 text-amber-400 hover:text-amber-500">
+        <button type="button" className="mr-1">
           Create a new account
         </button>
-        <button className='button' onClick={handleLogin}>Sign In</button>
+        <Button onClick={handleLogin}>Sign In</Button>
       </div>
     </div>
   );
