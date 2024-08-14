@@ -39,7 +39,16 @@ export default function NewProject({ onAddNewProject, onCancel }) {
           Please make sure to enter a value for all fields.
         </p>
       </Modal>
-      <div className="w-[35rem] mt-16 mx-auto">
+      <Modal ref={modalRef} btnCaption="Okay">
+        <h2 className="text-xl font-bold text-stone-700 my-4">Invalid input</h2>
+        <p className="text-stone-600 mb-4">
+          Oops ... looks like you forgot to enter a value.
+        </p>
+        <p className="text-stone-600 mb-4">
+          Please make sure to enter a value for all fields.
+        </p>
+      </Modal>
+      <div className="w-[35rem] mt-16 ">
         <menu className="flex items-center justify-end gap-4 my-4">
           <li>
             <button
