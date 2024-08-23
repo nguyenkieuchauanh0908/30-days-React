@@ -6,36 +6,33 @@ import {
   isNotEmpty,
   hasMinLength,
 } from "../util/validation";
+import { useInput } from "../hooks/useInput";
 export default function StateLogin() {
-  const [enteredValues, setEnteredValues] = useState({
-    email: "",
-    password: "",
-  });
-  const [didEdit, setDidEdit] = useState({
-    email: false,
-    password: false,
+  const {
+    value: emailValue,
+    handleInputChange: handleEmailChange,
+    handleInputBlur: handleEmailBlur,
+    hasError: emailIsInvalid,
+  } = useInput("", (value) => {
+    return isEmail(value) && isNotEmpty(value);
   });
 
-  const emailIsInvalid =
-    didEdit.email &&
-    !isEmail(enteredValues.email) &&
-    !isNotEmpty(enteredValues.email);
-  const passwordIsInvalid =
-    didEdit.password && !hasMinLength(enteredValues.password, 8);
+  const {
+    value: pwValue,
+    handleInputChange: handlePwChange,
+    handleInputBlur: handlePwBlur,
+    hasError: passwordIsInvalid,
+  } = useInput("", (value) => {
+    return hasMinLength(value, 8);
+  });
+
   function handleSubmission(event) {
     event.preventDefault();
-    console.log(enteredValues);
-  }
-
-  function handleInputChange(value, identifier) {
-    setDidEdit((prev) => ({
-      ...prev,
-      [identifier]: false,
-    }));
-    setEnteredValues((prevValues) => ({
-      ...prevValues,
-      [identifier]: value,
-    }));
+    if (!passwordIsInvalid && !emailIsInvalid) {
+      console.log(emailValue, pwValue);
+    } else {
+      return;
+    }
   }
 
   function handleReset() {
@@ -45,12 +42,6 @@ export default function StateLogin() {
     }));
   }
 
-  function handleInputBlur(identifier) {
-    setDidEdit((prev) => ({
-      ...prev,
-      [identifier]: true,
-    }));
-  }
   return (
     <form onSubmit={handleSubmission}>
       <h2>Login</h2>
@@ -62,10 +53,9 @@ export default function StateLogin() {
           type="email"
           name="email"
           error={emailIsInvalid && "Email is invalid"}
-          onBlur={() => handleInputBlur("email")}
-          onChange={(event) => {
-            handleInputChange(event.target.value, "email");
-          }}
+          onBlur={handleEmailBlur}
+          onChange={handleEmailChange}
+          value={emailValue}
         />
 
         <Input
@@ -74,11 +64,9 @@ export default function StateLogin() {
           type="password"
           name="password"
           error={passwordIsInvalid && "Password is invalid"}
-          onBlur={() => handleInputBlur("password")}
-          onChange={(event) => {
-            handleInputChange(event.target.value, "password");
-          }}
-          value={enteredValues.password}
+          onBlur={handlePwBlur}
+          onChange={handlePwChange}
+          value={pwValue}
         />
       </div>
 
