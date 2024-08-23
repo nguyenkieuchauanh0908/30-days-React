@@ -6,11 +6,9 @@ export default function Signup() {
     const data = Object.fromEntries(fd.entries());
     data.acquisition = acquisitionChanel;
     console.log(data);
-  }
-
-  function handleReset(event) {
     event.target.reset();
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <h2>Welcome on board!</h2>
