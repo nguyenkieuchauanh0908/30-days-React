@@ -5,7 +5,11 @@ export default function Signup() {
     const acquisitionChanel = fd.getAll("acquisition");
     const data = Object.fromEntries(fd.entries());
     data.acquisition = acquisitionChanel;
-    console.log("🚀 ~ handleSubmit ~ data:", data);
+    console.log(data);
+  }
+
+  function handleReset(event) {
+    event.target.reset();
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -94,7 +98,11 @@ export default function Signup() {
       </div>
 
       <p className="form-actions">
-        <button type="reset" className="button button-flat">
+        <button
+          type="reset"
+          className="button button-flat"
+          onClick={handleReset}
+        >
           Reset
         </button>
         <button type="submit" className="button">
