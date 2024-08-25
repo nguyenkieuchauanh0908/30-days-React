@@ -62,7 +62,6 @@ export function CartContextProvider({ children }) {
     addItem,
     removeItem,
     clearCart,
-    setData,
   };
 
   function addItem(item) {
