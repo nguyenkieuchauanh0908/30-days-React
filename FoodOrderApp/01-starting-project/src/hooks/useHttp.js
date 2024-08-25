@@ -21,7 +21,7 @@ export default function useHttp(url, config, initialData) {
       try {
         const resData = await sendHttpRequest(url, config);
         setData(resData);
-      } catch (err) {
+      } catch (error) {
         setError(error.message || "Something went wrong!");
       }
       setIsLoading(false);
