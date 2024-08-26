@@ -5,8 +5,8 @@ import classes from "./Counter.module.css";
 export default function Counter() {
   const dispatch = useDispatch();
   //React auto set up a subscription to the store and will update the component whenever the state changes and auto unsubscribe if the component is removed from the DOM
-  const counter = useSelector((state) => state.counter);
-  const show = useSelector((state) => state.showCounter);
+  const counter = useSelector((state) => state.counter.counter);
+  const show = useSelector((state) => state.counter.showCounter);
 
   const incrementHandler = (amount) => {
     dispatch(counterActions.increment({ amount: amount }));
