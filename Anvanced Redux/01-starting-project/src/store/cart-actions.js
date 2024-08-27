@@ -7,8 +7,8 @@ export const sendCartData = (cart) => {
     dispatch(
       uiSliceActions.showNotification({
         status: "pending",
-        title: "Sending...",
-        message: "Sending cart data",
+        title: "Updated...",
+        message: "Updated cart data",
       })
     );
     const sendRequest = async () => {
@@ -20,7 +20,7 @@ export const sendCartData = (cart) => {
         }
       );
       if (!respponse.ok) {
-        throw new Error("Sending cart data failed.");
+        throw new Error("Updated cart data failed.");
       }
     };
     try {
@@ -29,7 +29,7 @@ export const sendCartData = (cart) => {
         uiSliceActions.showNotification({
           status: "success",
           title: "Success...",
-          message: "Sending cart data successfully.!",
+          message: "Updated cart data successfully.!",
         })
       );
     } catch (error) {
@@ -37,7 +37,7 @@ export const sendCartData = (cart) => {
         uiSliceActions.showNotification({
           status: "error",
           title: "Error...",
-          message: "Sending cart data failed!",
+          message: "Updated cart data failed!",
         })
       );
     }
@@ -57,8 +57,13 @@ export const fetchCartData = () => {
       return data;
     };
     try {
-      const data = await fetchData();
-      dispatch(cartActions.replaceCart(data));
+      const cartData = await fetchData();
+      dispatch(
+        cartActions.replaceCart({
+          items: cartData.items || [],
+          totalQuantity: cartData.totalQuantity || 0,
+        })
+      );
     } catch (error) {
       dispatch(
         uiSliceActions.showNotification({
