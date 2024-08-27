@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { uiSliceActions } from "./ui-slice";
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
@@ -38,52 +37,13 @@ const cartSlice = createSlice({
         }
       }
     },
+
+    replaceCart(state, action) {
+      state.totalQuantity = action.payload.totalQuantity;
+      state.items = action.payload.items;
+    },
   },
 });
-
-//Action creator thunk
-//A thunk is a function that is called after another task done
-export const sendCartData = (cart) => {
-  return async (dispatch) => {
-    dispatch(
-      uiSliceActions.showNotification({
-        status: "pending",
-        title: "Sending...",
-        message: "Sending cart data",
-      })
-    );
-    const sendRequest = async () => {
-      const respponse = await fetch(
-        "https://advanced-redux-project-d9cbc-default-rtdb.asia-southeast1.firebasedatabase.app/cart.json",
-        {
-          method: "PUT",
-          body: JSON.stringify(cart),
-        }
-      );
-      if (!respponse.ok) {
-        throw new Error("Sending cart data failed.");
-      }
-    };
-    try {
-      await sendRequest();
-      dispatch(
-        uiSliceActions.showNotification({
-          status: "success",
-          title: "Success...",
-          message: "Sending cart data successfully.!",
-        })
-      );
-    } catch (error) {
-      dispatch(
-        uiSliceActions.showNotification({
-          status: "error",
-          title: "Error...",
-          message: "Sending cart data failed!",
-        })
-      );
-    }
-  };
-};
 
 export const cartActions = cartSlice.actions;
 export default cartSlice.reducer;
