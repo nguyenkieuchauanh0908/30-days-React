@@ -4,16 +4,21 @@ import HomePage from "./pages/Home";
 import ProductsPage from "./pages/Products";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
+import ProductDetail from "./pages/ProductDetail";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <RootLayout />,
     children: [
-      { path: "/", element: <HomePage /> },
+      { index: true, path: "", element: <HomePage /> },
       {
-        path: "/products",
+        path: "products",
         element: <ProductsPage />,
+      },
+      {
+        path: "products/:productId",
+        element: <ProductDetail />,
       },
     ],
     errorElement: <ErrorPage />,
