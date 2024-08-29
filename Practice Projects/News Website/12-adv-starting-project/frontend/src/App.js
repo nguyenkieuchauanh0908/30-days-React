@@ -7,7 +7,10 @@ import EventsPage from "./pages/Events";
 import RootLayout from "./pages/Root";
 import EventRootLayout from "./pages/EventRoot";
 import { loader as eventsLoader } from "./pages/Events";
-import { loader as eventLoader } from "./pages/EventDetail";
+import {
+  loader as eventLoader,
+  action as deleteEventAction,
+} from "./pages/EventDetail";
 import { action as newEventAction } from "./pages/NewEvent";
 import ErrorPage from "./pages/Error";
 function App() {
@@ -31,10 +34,12 @@ function App() {
               path: ":eventId",
               id: "event-detail",
               loader: eventLoader,
+
               children: [
                 {
                   index: true,
                   element: <EventDetailPage />,
+                  action: deleteEventAction,
                 },
                 { path: "edit", element: <EditEventPage /> },
               ],
