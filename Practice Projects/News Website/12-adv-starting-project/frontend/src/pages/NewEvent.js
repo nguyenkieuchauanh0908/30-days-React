@@ -20,8 +20,12 @@ export async function action({ request, params }) {
     body: JSON.stringify(eventData),
   });
 
+  if (response.status === 422) {
+    return response;
+  }
+
   if (!response.ok) {
-    throw json({ message: "Could not fetch events" }, { status: 500 });
+    throw json({ message: "Could not send events" }, { status: 500 });
   } else {
     return redirect("/events");
   }
