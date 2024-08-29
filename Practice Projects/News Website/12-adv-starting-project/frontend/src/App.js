@@ -8,6 +8,7 @@ import RootLayout from "./pages/Root";
 import EventRootLayout from "./pages/EventRoot";
 import { loader as eventsLoader } from "./pages/Events";
 import { loader as eventLoader } from "./pages/EventDetail";
+import { action as newEventAction } from "./pages/NewEvent";
 import ErrorPage from "./pages/Error";
 function App() {
   const router = createBrowserRouter([
@@ -38,13 +39,7 @@ function App() {
                 { path: "edit", element: <EditEventPage /> },
               ],
             },
-            // {
-            //   path: ":eventId",
-            //   element: <EventDetailPage />,
-            //   loader: eventLoader,
-            // },
-            { path: "new", element: <NewEventPage /> },
-            // { path: ":eventId/edit", element: <EditEventPage /> },
+            { path: "new", element: <NewEventPage />, action: newEventAction },
           ],
         },
       ],
