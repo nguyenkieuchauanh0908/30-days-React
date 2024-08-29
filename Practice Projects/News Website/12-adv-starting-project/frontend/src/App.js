@@ -26,9 +26,25 @@ function App() {
               element: <EventsPage />,
               loader: eventsLoader,
             },
-            { path: ":eventId", element: <EventDetailPage /> , loader:eventLoader },
+            {
+              path: ":eventId",
+              id: "event-detail",
+              loader: eventLoader,
+              children: [
+                {
+                  index: true,
+                  element: <EventDetailPage />,
+                },
+                { path: "edit", element: <EditEventPage /> },
+              ],
+            },
+            // {
+            //   path: ":eventId",
+            //   element: <EventDetailPage />,
+            //   loader: eventLoader,
+            // },
             { path: "new", element: <NewEventPage /> },
-            { path: ":eventId/edit", element: <EditEventPage /> },
+            // { path: ":eventId/edit", element: <EditEventPage /> },
           ],
         },
       ],
