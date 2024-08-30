@@ -40,7 +40,7 @@ function MainNavigation() {
               Newsletter
             </NavLink>
           </li>
-          {!token && (
+          {(!token || token == "EXPIRED") && (
             <li>
               <NavLink
                 to="/auth?mode=login"
@@ -52,7 +52,7 @@ function MainNavigation() {
               </NavLink>
             </li>
           )}
-          {token && (
+          {token && token != "EXPIRED" && (
             <li>
               <Form action="/logout" method="post">
                 <button>Log out</button>

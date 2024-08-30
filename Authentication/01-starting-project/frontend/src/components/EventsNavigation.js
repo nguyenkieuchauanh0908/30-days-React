@@ -19,7 +19,7 @@ function EventsNavigation() {
               All Events
             </NavLink>
           </li>
-          {token && (
+          {token && token !== "EXPIRED" && (
             <li>
               <NavLink
                 to="/events/new"

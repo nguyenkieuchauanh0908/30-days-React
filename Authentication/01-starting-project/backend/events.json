@@ -1,1 +1,66 @@
-{"events":[{"title":"Japan","image":"https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"},{"title":"A new event","image":"https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"},{"title":"A new event","image":"https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"},{"title":"A new event","image":"https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"}],"users":[{"email":"chauanh@yopmail.com","password":"$2a$12$wYQz8XXbs9QOd7BBp3qX8e1dBfohBocXIh9xkbpKIOEh9WmLPTk8O","id":"1400413d-ea8e-4361-a578-cf3884226843"},{"email":"admin@gmail.com","password":"$2a$12$fcnTX77njexB.KnTqJzVJuYsFBeWwNSm6fMqUf8I5leVrLBUgIIhW","id":"dfe65202-a0f6-4cc2-89ce-feb644eac5d3"},{"email":"lhduyen0205@yopmail.com","password":"$2a$12$d6KeqFy.uLRoHbs0ezdSae5rFuUSuujnN2/2XmQNPxtElkA28nZbK","id":"95628e0b-ddf7-4e71-89f6-7b0bdaadd864"},{"email":"duyen2k2@yopmail.com","password":"$2a$12$8gT1WJX0GuASWutvaPIpLuYUpw2AJC.sLPt/a5N1OoSihIe7V0AuK","id":"7b3383f6-9778-48ec-94df-a89ce3e32573"},{"email":"quoc@mail.com","password":"$2a$12$3lh7Bpt8g9/bo5UACHY3.eulr7waNN1agxMz1dzGmJpq8hrvJa0N6","id":"1a101165-8d41-4a6c-93bc-c4d07afb5743"},{"title":"A new event","image":"https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"}]}
+{
+  "events": [
+    {
+      "title": "Japan",
+      "image": "https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg",
+      "date": "2022-10-01",
+      "description": "Some awesome event!",
+      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
+    },
+    {
+      "title": "A new event",
+      "image": "https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg",
+      "date": "2022-10-01",
+      "description": "Some awesome event!",
+      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a4"
+    },
+    {
+      "title": "A new event",
+      "image": "https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg",
+      "date": "2022-10-01",
+      "description": "Some awesome event!",
+      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a2"
+    },
+    {
+      "title": "A new event",
+      "image": "https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg",
+      "date": "2022-10-01",
+      "description": "Some awesome event!",
+      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a5"
+    }
+  ],
+  "users": [
+    {
+      "email": "chauanh@yopmail.com",
+      "password": "$2a$12$wYQz8XXbs9QOd7BBp3qX8e1dBfohBocXIh9xkbpKIOEh9WmLPTk8O",
+      "id": "1400413d-ea8e-4361-a578-cf3884226843"
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$12$fcnTX77njexB.KnTqJzVJuYsFBeWwNSm6fMqUf8I5leVrLBUgIIhW",
+      "id": "dfe65202-a0f6-4cc2-89ce-feb644eac5d3"
+    },
+    {
+      "email": "lhduyen0205@yopmail.com",
+      "password": "$2a$12$d6KeqFy.uLRoHbs0ezdSae5rFuUSuujnN2/2XmQNPxtElkA28nZbK",
+      "id": "95628e0b-ddf7-4e71-89f6-7b0bdaadd864"
+    },
+    {
+      "email": "duyen2k2@yopmail.com",
+      "password": "$2a$12$8gT1WJX0GuASWutvaPIpLuYUpw2AJC.sLPt/a5N1OoSihIe7V0AuK",
+      "id": "7b3383f6-9778-48ec-94df-a89ce3e32573"
+    },
+    {
+      "email": "quoc@mail.com",
+      "password": "$2a$12$3lh7Bpt8g9/bo5UACHY3.eulr7waNN1agxMz1dzGmJpq8hrvJa0N6",
+      "id": "1a101165-8d41-4a6c-93bc-c4d07afb5743"
+    },
+    {
+      "title": "A new event",
+      "image": "https://wiki-travel.com.vn/Uploads/picture/UyenMac-231111101130-du-lich-new-york-1.jpg",
+      "date": "2022-10-01",
+      "description": "Some awesome event!",
+      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
+    }
+  ]
+}
