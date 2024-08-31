@@ -3,13 +3,13 @@ import { useQuery } from "@tanstack/react-query";
 import LoadingIndicator from "../UI/LoadingIndicator.jsx";
 import ErrorBlock from "../UI/ErrorBlock.jsx";
 import EventItem from "./EventItem.jsx";
-import fetchEvents from "../../util/http.js";
+import { fetchEvents } from "../../util/http.js";
 
 export default function NewEventsSection() {
   const { data, isPending, isError, error } = useQuery({
     queryKey: ["events"],
     queryFn: fetchEvents,
-    staleTime: 5000, //only send requests after 5 seconds if there is cached data
+    staleTime: 5000, //only send requests  if moving away from the current page and then come back after after 5 seconds
     //gcTime: 30000, //garbage cached data after 30 seconds
   });
   let content;
