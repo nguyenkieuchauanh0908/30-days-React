@@ -45,6 +45,7 @@ const router = createBrowserRouter([
                 index: true,
                 element: <EventDetailPage />,
                 action: deleteEventAction,
+                loader: checkAuthLoader,
               },
               {
                 path: "edit",
