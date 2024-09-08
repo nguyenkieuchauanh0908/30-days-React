@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+*.hot-update.json
+*.hot-update.js
+
