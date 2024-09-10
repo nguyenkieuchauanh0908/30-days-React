@@ -80,6 +80,7 @@ You should also know HTML and CSS for styling purposes (These can be taken along
 <p>👉Working with Ref and Portal</p>
 <p>Practice Project to refer: </p>  
     [Practice Project](hhttps://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Ref%20Portal)
+
 ## Day 6 + 7 + 8 + 9 + 10 + 11: Practice Core Concepts of React
 <p>👉useEffect() hook to handle side effect, clean up function
 <p>Practice Project to refer: </p>  
@@ -99,25 +100,36 @@ You should also know HTML and CSS for styling purposes (These can be taken along
 <p>👉Why to build custom hooks?Rules to build custom React hooks</p>
 <p>Practice Project to refer: </p>  
     [Practice Project](https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/HttpRequest/01-starting-project)
+
 ## Day 14: Working with form and user's input
 <p>👉Diferent Techniques to work with form and user' input</p>
 <p>Practice Project to refer: </p>  
     [Practice Project](https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Forms/01-starting-project)
+
 ## Day 15 + 16: Practice Context, useReducer, Ref, Portal, HttpRequest, Custom Hook, Form
 <p>Practice Project to refer: </p>  
     [Practice Project](https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Practice%20Projects/FoodOrderApp/01-starting-project)
+
 ## Day 17 + 18: Redux
 <p>👉What is Redux</p>
 <p>👉Context vs Redux</p>
 <p>👉Redux Store, Actions, Spliting to Slices...</p>
 <p>Practice Project to refer: </p>  
     [Practice Project 1](https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Practice%20Projects/Anvanced%20Redux/01-starting-project)
+
 ## Day 19 + 20: React Router
+
 ## Day 21: Authentication
+
 ## Day 22 + 23: React Query
+
 ## Day 24 + 25 + 26: Expanding to NextJS
+
 ## Day 27: React with Typescript
+
 ## Day 28: Practice
+
 ## Day 29: Practice
+
 ## Day 30: Wrap up
 
