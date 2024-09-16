@@ -16,7 +16,4 @@
 # Previews
 
 1.  Snapshot 1
-    <img src='./previews/pv1.png' alt='Snapshot 1'>
-
-2.  Snapshot 2
     <img src='./previews/pv2.png' alt='Snapshot 2'>

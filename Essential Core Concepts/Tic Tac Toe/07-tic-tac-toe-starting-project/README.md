@@ -5,8 +5,11 @@
 - In this project, the users can:
 
   👉 User can change their displaying name
+
   👉 Play tic tac toe with simple 3x3 matrix
+
   👉 Track users turns as in Snapshot 4
+
   👉 Display a basic notification panel when the game is drawn or there is a winner (as shown in Snapshot 5)
 
 # Installation
