@@ -1,8 +1,38 @@
-# React + Vite
+# Introdution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- In this mini project, I create a simple back-end that offers API for interacting with data
+- The front-end websire render meet-up events fetched from the backend
+- Users can add/delete/update event or search for events
+- React router is used for routing while React Query is used for handling with managing state and http requests
 
-Currently, two official plugins are available:
+# Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements
+
+- NodeJS v18 is required beforehand
+
+## Steps
+
+- Make sure to run <code>npm i</code> and then <code>node app.js</code>/<code>npm start</code>/<code>npm run dev</code>/ <code>nodemon app.js</code> (if you use nodemon) in the backend server beforehand
+- Run <code>npm i</code> in the front-end server to install all dependencies
+- Run <code>npm run dev</code> or <code>npm start</code> to start the development process
+
+# Previews
+
+1.  Snapshot 1
+    <img src='./previews/pv1.png' alt='Snapshot 1'>
+
+2.  Snapshot 2
+    <img src='./previews/pv2.png' alt='Snapshot 2'>
+
+3.  Snapshot 3
+    <img src='./previews/pv3.png' alt='Snapshot 3'>
+
+4.  Snapshot 4
+    <img src='./previews/pv4.png' alt='Snapshot 4'>
+
+5.  Snapshot 5
+    <img src='./previews/pv5.png' alt='Snapshot 5'>
+
+6.  Snapshot 6
+    <img src='./previews/pv6.png' alt='Snapshot 6'>
