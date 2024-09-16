@@ -20,9 +20,3 @@
 
 2.  Snapshot 2
     <img src='./previews/pv2.png' alt='Snapshot 2'>
-
-3.  Snapshot 3
-    <img src='./previews/pv3.png' alt='Snapshot 3'>
-
-4.  Snapshot 4
-    <img src='./previews/pv4.png' alt='Snapshot 4'>
