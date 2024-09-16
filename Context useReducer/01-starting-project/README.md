@@ -1,6 +1,6 @@
 # Introdution
 
-- In this mini practice project, I create a counter game in which the more close users stop the timer to 0, the higher score they get
+- In this mini practice project, I create a simple store with displaying mockup data of items in which the users can see items, add item to cart, update cart through context
 
 # Installation
 

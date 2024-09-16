@@ -1,6 +1,7 @@
 # Introdution
 
 - In this mini practice project, I create a mini task management app where uses can add/delete projects and tasks with due
+- Practice Core Concept, Dynamic content, lifting-state-up
 
 # Installation
 

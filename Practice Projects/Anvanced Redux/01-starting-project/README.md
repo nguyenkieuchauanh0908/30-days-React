@@ -1,6 +1,8 @@
 # Introdution
 
-- In this Redux mini practice project
+- In this Redux mini practice project, a basic website with data from a simple Firebase server is created to practice the concept of Redux
+- Basically, a redux store is created to manage uiSliceReducer (manage shared tasks and state related to UI) and cartSliceReducer (manage shared tasks and state related to cart)
+- I also use the concept of thunk (a function that is called after another function) to fetch from and send data to the firebase storage
 
 # Installation
 

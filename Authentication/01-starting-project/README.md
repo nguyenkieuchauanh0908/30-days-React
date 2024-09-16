@@ -1,8 +1,6 @@
 # Introdution
 
-- In this mini project, I create a simple backend that offers API for interacting with data
-- The websire render places fetched from the backend using custom hooks and useEffect to handle side-effects
-- Users can add and update places to want-to-visit section
+- I ultilize the website in the section Router here. The only difference is that this website now is added with a simple authentication mechanism (with JWT) alowing users to login/signup
 
 # Installation
 
@@ -23,6 +21,3 @@
 
 2.  Snapshot 2
     <img src='./previews/pv2.png' alt='Snapshot 2'>
-
-3.  Snapshot 3
-    <img src='./previews/3.png' alt='Snapshot 3'>

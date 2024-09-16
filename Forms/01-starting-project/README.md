@@ -1,6 +1,6 @@
 # Introdution
 
-- In this mini project, I create a small form and apply various methods of working with form as well as validating uses' input
+- In this mini project, I create a small form and apply various methods of working with form as well as validating users' input
 
 # Installation
 

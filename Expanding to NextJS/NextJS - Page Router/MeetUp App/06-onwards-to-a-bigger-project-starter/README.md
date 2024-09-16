@@ -1,5 +1,8 @@
 # Introdution
 
+- A simple website to perform the basic implementation of Page Router in NextJS
+- Users can see meetings fetched from mongoDB database and add new meeting to collection stored in mongoDB database
+
 # Installation
 
 ## Requirements

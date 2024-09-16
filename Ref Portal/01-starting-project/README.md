@@ -1,7 +1,8 @@
 # Introdution
 
-- In this mini practice project, I create a simple Quizzapp with mock in question.js file
-- Practice React Core Concepts, lifting state up... (props drilling)
+- In this mini practice project, I create a time-countting-down game in which the more closely users stop the timer to 0, the higher score they get
+- I applied createPortal to create a modal that will display whenever the user lost or stops the timer
+- I also use forwardRef and useImperativeHandle to use dialof refference in the parent component
 
 # Installation
 
@@ -24,3 +25,6 @@
 
 3.  Snapshot 3
     <img src='./previews/pv3.png' alt='Snapshot 3'>
+
+4.  Snapshot 4
+    <img src='./previews/pv4.png' alt='Snapshot 4'>

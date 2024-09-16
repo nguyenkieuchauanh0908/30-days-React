@@ -1,8 +1,8 @@
 # Introdution
 
 - In this mini project, I create a simple back-end that offers API for interacting with data
-- The front-end websire render places fetched from the back-end using custom hooks and useEffect to handle side-effects
-- Users can add and update places to want-to-visit section
+- The front-end websire render meals fetched data and send data using custom hooks and useEffect to handle side-effects
+- I also apply concepts of context with UserProgressContext to manage detail of the user's progress and CartContext to manage shared data and actions related to cart in which reducers are applied for complex state management
 
 # Installation
 

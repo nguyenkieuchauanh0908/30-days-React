@@ -1,5 +1,10 @@
 # Introdution
 
+- In this mini project, I create a simple back-end that offers API for interacting with data
+- The front-end websire render meet-up events fetched from the backend
+- Users can add/delete/update event or search for events
+- React router is used for routing while React Query is used for handling with managing state and http requests
+
 # Installation
 
 ## Requirements

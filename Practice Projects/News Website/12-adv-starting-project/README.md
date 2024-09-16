@@ -1,8 +1,8 @@
 # Introdution
 
 - In this mini project, I create a simple back-end that offers API for interacting with data
-- The front-end websire render places fetched from the back-end using custom hooks and useEffect to handle side-effects
-- Users can add and update places to want-to-visit section
+- The front-end websire render places fetched from the back-end using loader and action (with the help of router-dom)
+- Users can add/update/delete news as well as navigating around the website
 
 # Installation
 
@@ -26,3 +26,6 @@
 
 3.  Snapshot 3
     <img src='./previews/pv3.png' alt='Snapshot 3'>
+
+4.  Snapshot 3
+    <img src='./previews/pv4.png' alt='Snapshot 4'>

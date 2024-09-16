@@ -4,7 +4,7 @@
 👉 This repo records my 30-day journey with ReactJS (from core concepts like components, hooks, props drilling, ref and portal, working with forms and HTTP requests, etc... to more advanced ones such as Context, Redux, React Router, React Query, JWT Authentication, NextJS)
 It can also be used as a reference for anyone who needs a detailed plan to learn React quickly.
 
-👉**_Important note:_** This repo is not a ReactJS official doc but only for reference purposes. I highly recommend you visit the latest doc released from the <a href='https://react.dev/'>React official doc</a> and their <a href='https://github.com/reactjs/react.dev'>GitHub repo</a>. Besides, contents that are marked as **Optional** can be skipped if you've been already familiar while ones that are marked as **Extended** are not necessary to study immediately (you can skip them if you don't have time now but you can come back later)
+👉 **Important note:** This repo is not a ReactJS official doc but only for reference purposes. I highly recommend you visit the latest doc released from the <a href='https://react.dev/'>React official doc</a> and their <a href='https://github.com/reactjs/react.dev'>GitHub repo</a>. Besides, contents that are marked as **Optional** can be skipped if you've been already familiar while ones that are marked as **Extended** are not necessary to study immediately (you can skip them if you don't have time now but you can come back later)
 
 # Content
 
@@ -405,7 +405,7 @@ const Counter = () => {
 };
 ```
 
-- <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Context%20useReducer/01-starting-project'>Practice Project to refer</a>
+#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Context%20useReducer/01-starting-project'>Practice Project to refer</a>
 
 ## Day 13: Http Request + Custome React Hook
 
@@ -603,6 +603,8 @@ export default Counter;
 
 #### 👉 Get familiar with hooks in router such as <a href='https://react.dev/learn/sharing-state-between-components'>useActionData</a>, <a href='https://reactrouter.com/en/main/hooks/use-form-action'>useFormActionData</a>, <a href='https://reactrouter.com/en/main/hooks/use-loader-data'>useLoaderData</a>, <a href='https://reactrouter.com/en/main/hooks/use-location'>useLocation</a>, <a href='https://reactrouter.com/en/main/hooks/use-location'>useNavigate</a>, <a href='https://reactrouter.com/en/main/hooks/use-navigation'>useNavigation</a>, <a href='https://reactrouter.com/en/main/hooks/use-outlet'>useOutlet</a>, <a href='https://reactrouter.com/en/main/hooks/use-params'>useParam</a>, <a href='https://reactrouter.com/en/main/hooks/use-search-params'>useSearchParams</a>, <a href='https://reactrouter.com/en/main/hooks/use-submit'>useSubmit</a>, <a href='https://reactrouter.com/en/main/hooks/use-routes'>useRoutes</a>, <a href='https://reactrouter.com/en/main/hooks/use-submit'>useSubmit</a>
 
+#### 👉 <a href='>
+
 ## Day 21: Authentication (**Extended**)
 
 ### Outcome
@@ -639,8 +641,6 @@ Authorization: Bearer <token>
 
 ## Day 28: Best Practices (**Extended**)
 
-\_
-
 ## Day 29: Summary
 
 ## Day 30: Summary
@@ -652,7 +652,7 @@ You will see that at almost sections, I attach links leading to the project to r
 1. Clone this repository
 
 ```ruby
-git clone https://github.com/nguyenkieuchauanh0908/30-days-React.
+git clone https://github.com/nguyenkieuchauanh0908/30-days-React.git
 ```
 
 2. Go to the folder included my practice project and follow the instructions from README.md of that project to run it.

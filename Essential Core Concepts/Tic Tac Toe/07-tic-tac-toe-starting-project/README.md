@@ -1,6 +1,11 @@
 # Introdution
 
-- In this React Core Concept mini practice project, I create a Tic tac toe game (with mock logic and data):
+- I create a Tic tac toe game (with mock logic for wining combinations). Besides practice ReactJS Core Concepts, I also apply lifting-up-state technique to allow shared state between components.
+- In this project, the users can:
+  👉 User can change their displaying name
+  👉 Play tic tac toe with simple 3x3 matrix
+  👉 Track users turns as in Snapshot 4
+  👉 Display a basic notification panel when the game is drawn or there is a winner (as shown in Snapshot 5)
 
 # Installation
 

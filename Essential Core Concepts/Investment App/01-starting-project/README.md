@@ -1,6 +1,6 @@
 # Introdution
 
-- In this React Core Concept mini practice project, I create a mini caculator that caculates the expected return one receives after a duration of time
+- In this React Core Concept mini practice project, I create a mini caculator that caculates the expected return one receives after a duration of time. I apply lifting-up-state technique to make sure that the user input changes will be lifted to the nearest parent component with Result component, and as a result, will also afect Result component whenever they change value.
 
 # Installation
 
