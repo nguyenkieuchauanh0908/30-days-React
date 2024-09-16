@@ -27,6 +27,3 @@
 
 4.  Snapshot 5
     <img src='./previews/pv5.png' alt='Snapshot 5'>
-
-5.  Snapshot 6
-    <img src='./previews/pv6.png' alt='Snapshot 6'>

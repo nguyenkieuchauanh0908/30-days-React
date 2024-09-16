@@ -1,8 +1,7 @@
 # About ReactJS and this repo:
 
 👉 React is a widely used library for web and native user interfaces allowing developers to build user interfaces out of individual pieces called components and then combine them into entire screens, pages, and apps.
-👉 This repo records my 30-day journey with ReactJS (from core concepts like components, hooks, props drilling, ref and portal, working with forms and HTTP requests, etc... to more advanced ones such as Context, Redux, React Router, React Query, JWT Authentication, NextJS)
-It can also be used as a reference for anyone who needs a detailed plan to learn React quickly.
+👉 This repo records my 30-day journey with ReactJS (from core concepts like components, hooks, props drilling, ref and portal, working with forms and HTTP requests, etc... to more advanced ones such as Context, Redux, React Router, React Query, JWT Authentication, NextJS). I followed the Udemy course <a href='https://www.udemy.com/share/101Wby3@tViRXg1USKDKWk_iWf5N10H27loTd6XygvI8THJVDN6bQvg3i2hfSZpnZAx2AxY4Pw==/'>React - The Complete Guide 2024</a> but felt it so long to complete all so I came up with this repo hoping that someone is on the way to study React will find a reference.
 
 👉 **Important note:** This repo is not a ReactJS official doc but only for reference purposes. I highly recommend you visit the latest doc released from the <a href='https://react.dev/'>React official doc</a> and their <a href='https://github.com/reactjs/react.dev'>GitHub repo</a>. Besides, contents that are marked as **Optional** can be skipped if you've been already familiar while ones that are marked as **Extended** are not necessary to study immediately (you can skip them if you don't have time now but you can come back later)
 
@@ -48,11 +47,11 @@ It can also be used as a reference for anyone who needs a detailed plan to learn
   #### 👉 Spread and Destructuring
 
   - New feature in ES6 but need to know
-  - See more here: <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax'>Spread</a> and here <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment'>Destructuring</a
+  - See more here: <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax'>Spread</a> and here <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment'>Destructuring
 
   #### 👉 Classes (Optional):
 
-  - You can skip this if you already have a foundation in OOP or are beginner (In fact, not a lot of projects in Reacts use classes after the advent of hooks so you can come back to it later)
+  - You can skip this if you already have a foundation in OOP or are a beginner (In fact, not a lot of projects in Reacts use classes after the advent of hooks so you can come back to it later)
     <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes'>See more here</a>
 
 ## Day 2: ReactJS Key Concepts
@@ -127,7 +126,7 @@ function Welcome(props) {
 
 #### 👉 Practice
 
-<a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Essential%20Core%20Concepts/Core%20Concept%20Practice/01-starting-project'>Practice Project to refer</a>
+[Practice Project to refer](Essential%20Core%20Concepts/Core%20Concept%20Practice/01-starting-project)
 
 ## Day 3: ReactJS Key Concepts
 
@@ -164,13 +163,13 @@ const btnClick = (countNumber) => {setCount(prevCount => prevCount + countNumber
 
 #### 👉 'children' prop, forwarding props to the inner component
 
-- The <a href='https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children'>children prop</a>is a special prop that allows you to pass child elements or components into a parent component.
+- The <a href='https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children'>children prop</a> is a special prop that allows you to pass child elements or components into a parent component.
 - Sometimes, passing props become repetitive and cumbersome. In that case, spread syntax can be used to reduce the amount of code to write (but need to be careful when using them). <a href='https://react.dev/learn/passing-props-to-a-component#forwarding-props-with-the-jsx-spread-syntax'>See more </a>
 
 #### 👉 Practice
 
-<a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Essential%20Core%20Concepts/Tic%20Tac%20Toe/07-tic-tac-toe-starting-project'>Practice Project 1</a>
-<a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/d0bf552d37277f9908a3cb0fdf744f45c7597ca6/Essential%20Core%20Concepts/Investment%20App/01-starting-project'>Practice Project 2</a>
+[Practice Project 1](Essential%20Core%20Concepts/Tic%20Tac%20Toe/07-tic-tac-toe-starting-project)
+[Practice Project 2](Essential%20Core%20Concepts/Investment%20App/01-starting-project)
 
 ## Day 4: Styling ReactJS (**Optional**)
 
@@ -226,7 +225,7 @@ export default Button;
 
 #### 👉 Practice
 
-<a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Styling/01-starting-project'>Practice Project to refer</a>
+[Practice Project to refer](Styling/01-starting-project)
 
 ## Day 5: Ref - Portal
 
@@ -282,7 +281,7 @@ const Modal = ({ isOpen, children, onClose }) => {
 };
 ```
 
-#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Ref%20Portal'>Practice Project to refer
+#### 👉 [Practice Project to refer](Ref%20Portal/01-starting-project)
 
 ## Day 6 + 7 + 8 + 9 + 10 + 11: Practice Core Concepts of React
 
@@ -290,7 +289,7 @@ const Modal = ({ isOpen, children, onClose }) => {
 
 #### 👉 <a href='https://react.dev/reference/react/useEffect'>useEffect </a> to handle side effect, clean up function
 
-- sideEffects typically refer to actions that affect things outside the scope of the current function, such as API calls, timers, or directly updating the DOM
+- side effects typically refer to actions that affect things outside the scope of the current function, such as API calls, timers, or directly updating the DOM
   Example using React to fetch data from an API (Most frameworks based on React offer more flexible and efficient ways to call API)
 
 ```ruby
@@ -315,11 +314,11 @@ useEffect(() => {
 }, []);
 ```
 
-- The second argument of <code>useEffect</code> specify dependencies of useEffect. The effect will run when any of the dependencies changes. In case it is an empty array, the effect will run only once when the component amounted.
+- The second argument of <code>useEffect</code> specify dependencies of useEffect. The effect will run when any of the dependencies changes. In case it is an empty array, the effect will run only once when the component is mounted.
 
 ### 👉 Practice React Key Concepts
 
-<a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Practice%20Projects/Essentials/Task%20Management/01-starting-project'>Practice Project 1</a> <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Practice%20Projects/Essentials/QuizzApp/01-starting-project'>Practice Project 2</a>
+[Practice Project 1](Practice%20Projects/Essentials/Task%20Management/01-starting-project) [Practice Project 2](Practice%20Projects/Essentials/QuizzApp/01-starting-project)
 
 ## Day 12: Advanced State Management with Context
 
@@ -405,7 +404,7 @@ const Counter = () => {
 };
 ```
 
-#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Context%20useReducer/01-starting-project'>Practice Project to refer</a>
+#### 👉 [Practice Project to refer](Context%20useReducer/01-starting-project)
 
 ## Day 13: Http Request + Custome React Hook
 
@@ -483,7 +482,7 @@ const MyForm = () => {
 export default MyForm;
 ```
 
-#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/HttpRequest/01-starting-project'>Practice Project to refer</a>
+#### 👉 [Practice Project to refer](HttpRequest/01-starting-project)
 
 ## Day 14: Working with form and user's input
 
@@ -496,13 +495,13 @@ export default MyForm;
 - Getting Input values via FormData and Browser API
   ...
 
-#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Forms/01-starting-project'>Practice Project to refer </a>
+#### 👉 [Practice Project to refer](Forms/01-starting-project)
 
 ## Day 15 + 16: Practice Context, useReducer, Ref, Portal, HttpRequest, Custom Hook, Form
 
 ### Outcome:
 
-#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Practice%20Projects/FoodOrderApp/01-starting-project'>Practice Project to refer </a>
+#### 👉 [Practice Project to refer](Practice%20Projects/FoodOrderApp/01-starting-project)
 
 ## Day 17 + 18: <a href='https://redux.js.org/introduction/getting-started'>Redux</a> (**Extended**)
 
@@ -591,7 +590,7 @@ const Counter = () => {
 export default Counter;
 ```
 
-#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Practice%20Projects/Anvanced%20Redux/01-starting-project'>Practice Project to refer</a>
+#### 👉 [Practice Project to refer](Practice%20Projects/Anvanced%20Redux/01-starting-project)
 
 ## Day 19 + 20: <a href='https://reactrouter.com/en/main/start/tutorial'>React Router</a>
 
@@ -601,9 +600,9 @@ export default Counter;
 
 #### 👉 Working with important concepts like: <a href='https://reactrouter.com/en/main/route/loader'>loader</a>, <a href='https://reactrouter.com/en/main/route/action'>action</a>, <a href='https://reactrouter.com/en/main/route/error-element'>error element</a>, <a href='https://reactrouter.com/en/main/route/lazy'>lazy loading</a>, <a href='https://reactrouter.com/en/main/guides/deferred'> defer data</a>
 
-#### 👉 Get familiar with hooks in router such as <a href='https://react.dev/learn/sharing-state-between-components'>useActionData</a>, <a href='https://reactrouter.com/en/main/hooks/use-form-action'>useFormActionData</a>, <a href='https://reactrouter.com/en/main/hooks/use-loader-data'>useLoaderData</a>, <a href='https://reactrouter.com/en/main/hooks/use-location'>useLocation</a>, <a href='https://reactrouter.com/en/main/hooks/use-location'>useNavigate</a>, <a href='https://reactrouter.com/en/main/hooks/use-navigation'>useNavigation</a>, <a href='https://reactrouter.com/en/main/hooks/use-outlet'>useOutlet</a>, <a href='https://reactrouter.com/en/main/hooks/use-params'>useParam</a>, <a href='https://reactrouter.com/en/main/hooks/use-search-params'>useSearchParams</a>, <a href='https://reactrouter.com/en/main/hooks/use-submit'>useSubmit</a>, <a href='https://reactrouter.com/en/main/hooks/use-routes'>useRoutes</a>, <a href='https://reactrouter.com/en/main/hooks/use-submit'>useSubmit</a>
+#### 👉 Get familiar with hooks in router such as <a href='https://reactrouter.com/en/main/hooks/use-action-data'>useActionData</a>, <a href='https://reactrouter.com/en/main/hooks/use-form-action'>useFormActionData</a>, <a href='https://reactrouter.com/en/main/hooks/use-loader-data'>useLoaderData</a>, <a href='https://reactrouter.com/en/main/hooks/use-location'>useLocation</a>, <a href='https://reactrouter.com/en/main/hooks/use-navigate'>useNavigate</a>, <a href='https://reactrouter.com/en/main/hooks/use-navigation'>useNavigation</a>, <a href='https://reactrouter.com/en/main/hooks/use-outlet'>useOutlet</a>, <a href='https://reactrouter.com/en/main/hooks/use-params'>useParam</a>, <a href='https://reactrouter.com/en/main/hooks/use-search-params'>useSearchParams</a>, <a href='https://reactrouter.com/en/main/hooks/use-submit'>useSubmit</a>, <a href='https://reactrouter.com/en/main/hooks/use-routes'>useRoutes</a>, <a href='https://reactrouter.com/en/main/hooks/use-submit'>useSubmit</a>
 
-#### 👉 <a href='>
+#### 👉 [Practice Project to refer](Practice%20Projects/News%20Website/12-adv-starting-project)
 
 ## Day 21: Authentication (**Extended**)
 
@@ -619,21 +618,21 @@ export default Counter;
 Authorization: Bearer <token>
 ```
 
-#### 👉 Practice React Router and Authentication: <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/main/Authentication/01-starting-project'>Practice Project to refer</a>
+#### 👉 [Practice React Router and Authentication](Authentication/01-starting-project)
 
 ## Day 22 + 23: <a href='https://tanstack.com/query/latest/docs/framework/react/installation'>React Query</a> (**Extended**)
 
-#### Outcome
+### Outcome
 
-### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/main/React%20Query/starting-project'>Practice Project to refer</a>
+#### 👉 [Practice Project to refer](React%20Query/starting-project)
 
 ## Day 24 + 25 + 26: Expanding to <a href='https://nextjs.org/docs'>NextJS</a> (**Extended**)
 
 - This is a extremely extended part. Because this repo is mainly about React, I will not share deeply about NextJS. However, if you are already have a valid foundation of React, move to NextJS is quite an easy move. I will soon come up with a new repo with NextJS in the near future. (For now, you can have a quick glance at my practice project)
 
-### 👉 Outcome
+### Outcome
 
-#### 👉 <a href='https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Expanding%20to%20NextJS/NextJS%20-%20App%20Router/05-onwards-foodies-starting-project'>Practice Project App Router</a> and <a href='>https://github.com/nguyenkieuchauanh0908/30-days-React/tree/4fd475dd3f33ea055b47f90b8c02ba06de53780b/Expanding%20to%20NextJS/NextJS%20-%20Page%20Router/MeetUp%20App/06-onwards-to-a-bigger-project-starter'>Practice Project Page Router</a>
+#### 👉 [Practice Project App Router](Expanding%20to%20NextJS/NextJS%20-%20App%20Router/05-onwards-foodies-starting-project) and [Practice Project Page Router](Expanding%20to%20NextJS/NextJS%20-%20Page%20Router/MeetUp%20App/06-onwards-to-a-bigger-project-starter)
 
 ## Day 27: React with <a href='https://www.typescriptlang.org/docs/'>Typescript</a> (**Optional**)
 
@@ -641,9 +640,7 @@ Authorization: Bearer <token>
 
 ## Day 28: Best Practices (**Extended**)
 
-## Day 29: Summary
-
-## Day 30: Summary
+## Day 29 + 30: Summary
 
 # Guide to running practice projects
 
